@@ -34,17 +34,12 @@ export default function Testimonials() {
                 <div className="text-center mb-16">
                     <div className="flex items-center justify-center gap-4 mb-4">
                         <span className="h-px w-12 bg-amber-400/50" />
-                        <div className="flex gap-1">
-                            {[...Array(5)].map((_, i) => (
-                                <Star key={i} className="w-4 h-4 text-amber-400" fill="currentColor" />
-                            ))}
-                        </div>
+                        <Quote className="w-5 h-5 text-amber-400" />
                         <span className="h-px w-12 bg-amber-400/50" />
                     </div>
-                    <h2 className="text-3xl sm:text-4xl font-bold text-amber-50 mb-3">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-amber-50">
                         {t.testimonialsTitle}
                     </h2>
-                    <p className="text-amber-400 font-medium">{t.testimonialsSubtitle}</p>
                 </div>
 
                 {/* Carousel */}
@@ -89,8 +84,8 @@ export default function Testimonials() {
                                 key={i}
                                 onClick={() => setActive(i)}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${i === active
-                                        ? 'bg-amber-400 w-6'
-                                        : 'bg-amber-400/30 hover:bg-amber-400/50'
+                                    ? 'bg-amber-400 w-6'
+                                    : 'bg-amber-400/30 hover:bg-amber-400/50'
                                     }`}
                                 aria-label={`Testimonial ${i + 1}`}
                             />

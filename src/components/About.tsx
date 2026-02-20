@@ -31,7 +31,7 @@ export default function About() {
                                 alt="Tomer Nir playing oud"
                                 width={600}
                                 height={600}
-                                className="object-cover w-full aspect-square group-hover:scale-105 transition-transform duration-700"
+                                className="object-cover object-top w-full aspect-[3/4] group-hover:scale-105 transition-transform duration-700"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#1a1209]/40 to-transparent" />
                         </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { Guitar, Music2, Mic, PenTool } from 'lucide-react';
+import { Guitar, Music2, Mic, PenTool, BookOpen } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 
 export default function WhatYoullLearn() {
@@ -20,7 +20,7 @@ export default function WhatYoullLearn() {
                 <div className="text-center mb-16">
                     <div className="flex items-center justify-center gap-4 mb-4">
                         <span className="h-px w-12 bg-amber-400/50" />
-                        <span className="text-amber-400 text-sm tracking-[0.2em] uppercase font-light">Curriculum</span>
+                        <BookOpen className="w-5 h-5 text-amber-400" />
                         <span className="h-px w-12 bg-amber-400/50" />
                     </div>
                     <h2 className="text-3xl sm:text-4xl font-bold text-amber-50">

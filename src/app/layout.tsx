@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Heebo, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -51,6 +53,8 @@ export default function RootLayout({
     <html lang="he" dir="rtl" className={`${heebo.variable} ${inter.variable}`}>
       <body className="font-[family-name:var(--font-heebo)] antialiased">
         <LanguageProvider>{children}</LanguageProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

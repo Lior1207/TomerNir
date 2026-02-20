@@ -29,18 +29,18 @@ export default function Hero() {
 
             {/* Content */}
             <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                {/* Decorative line */}
+                {/* Name - small */}
                 <div className="flex items-center justify-center gap-4 mb-8 animate-fadeIn">
                     <span className="h-px w-12 bg-amber-400/50" />
-                    <span className="text-amber-400 text-sm tracking-[0.3em] uppercase font-light">
-                        {t.heroSubtitle}
+                    <span className="text-amber-400 text-xl sm:text-2xl tracking-[0.3em] uppercase font-light">
+                        {t.heroTitle}
                     </span>
                     <span className="h-px w-12 bg-amber-400/50" />
                 </div>
 
-                {/* Name */}
+                {/* Subtitle - large */}
                 <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold text-amber-50 mb-6 animate-slideUp">
-                    {t.heroTitle}
+                    {t.heroSubtitle}
                 </h1>
 
                 {/* Tagline */}

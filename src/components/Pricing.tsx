@@ -64,11 +64,7 @@ export default function Pricing() {
                     </div>
 
                     {/* At student's home */}
-                    <div className="group relative p-8 rounded-2xl bg-gradient-to-br from-amber-400/15 to-orange-500/10 border-2 border-amber-400/30 hover:border-amber-400/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-900/20">
-                        {/* Popular badge */}
-                        <div className="absolute -top-3 start-6 px-3 py-1 bg-amber-500 text-amber-950 text-xs font-bold rounded-full">
-                            {locale === 'he' ? 'הכי נוח' : 'Most Convenient'}
-                        </div>
+                    <div className="group relative p-8 rounded-2xl bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-400/20 hover:border-amber-400/40 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-900/20">
                         <div className="flex items-center gap-2 text-amber-400 mb-2">
                             <MapPin className="w-5 h-5" />
                             <span className="text-sm font-medium">{t.pricingAtStudentLocation}</span>
@@ -92,7 +88,7 @@ export default function Pricing() {
                         </ul>
                         <button
                             onClick={scrollToContact}
-                            className="w-full py-3 bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25"
+                            className="w-full py-3 bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 font-medium rounded-xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-300"
                         >
                             {t.pricingCta}
                         </button>

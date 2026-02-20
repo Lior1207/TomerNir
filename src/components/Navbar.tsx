@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Music } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import OudIcon from './OudIcon';
 import { useLanguage } from '@/lib/LanguageContext';
 
 const sections = [
@@ -42,8 +43,8 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-                    ? 'bg-[#1a1209]/95 backdrop-blur-md shadow-lg shadow-amber-900/10'
-                    : 'bg-transparent'
+                ? 'bg-[#1a1209]/95 backdrop-blur-md shadow-lg shadow-amber-900/10'
+                : 'bg-transparent'
                 }`}
             dir={dir}
         >
@@ -54,7 +55,7 @@ export default function Navbar() {
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         className="flex items-center gap-2 group"
                     >
-                        <Music className="w-6 h-6 text-amber-400 group-hover:text-amber-300 transition-colors" />
+                        <OudIcon className="w-6 h-6 text-amber-400 group-hover:text-amber-300 transition-colors" />
                         <span className="text-amber-50 font-semibold text-lg tracking-wide">
                             {t.heroTitle}
                         </span>

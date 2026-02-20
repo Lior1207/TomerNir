@@ -1,6 +1,7 @@
 'use client';
 
-import { Instagram, Music } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import OudIcon from './OudIcon';
 import { useLanguage } from '@/lib/LanguageContext';
 
 export default function Footer() {
@@ -12,7 +13,7 @@ export default function Footer() {
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <Music className="w-5 h-5 text-amber-400" />
+                        <OudIcon className="w-5 h-5 text-amber-400" />
                         <span className="text-amber-200/70 text-sm">{t.footerBuiltWith}</span>
                     </div>
 

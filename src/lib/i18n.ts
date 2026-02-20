@@ -37,10 +37,15 @@ export interface Translations {
   learnComposeTitle: string;
   learnComposeDesc: string;
 
-  // Video
+  // Video / MUZAIKA
   videoTitle: string;
   videoSubtitle: string;
   videoFollowCta: string;
+  muzaikaTitle: string;
+  muzaikaDesc: string;
+  muzaikaCta: string;
+  muzaikaYoutubeCta: string;
+  muzaikaMembers: string;
 
   // Testimonials
   testimonialsTitle: string;
@@ -102,49 +107,54 @@ const he: Translations = {
   learnComposeTitle: 'הלחנה',
   learnComposeDesc: 'ליצור מוזיקה משלכם — מהרעיון הראשון ועד ליצירה מושלמת',
 
-  // Video
+  // Video / MUZAIKA
   videoTitle: 'הופעות ונגינה',
-  videoSubtitle: 'צפו בתומר מנגן — חבר בהרכב האינסטרומנטלי מוזאיקה',
+  videoSubtitle: 'אני חלק מהרכב מוזאיקה — הרכב ירושלמי היוצר מוסיקה אתנית אינסטרומנטלית מקורית',
   videoFollowCta: 'עקבו באינסטגרם',
+  muzaikaTitle: 'הרכב מוזאיקה',
+  muzaikaDesc: 'פסיפס של תרבויות — אנחנו הרכב ירושלמי שיוצר מוסיקה אתנית אינסטרומנטלית מקורית בהשפעות שורשיות של מוסיקה ים תיכונית. החזון שלנו הוא ליצור מוזיקה שמחברת בין תרבויות מוסיקליות מהמזרח התיכון.',
+  muzaikaCta: 'לאתר מוזאיקה',
+  muzaikaYoutubeCta: 'לערוץ היוטיוב',
+  muzaikaMembers: 'תומר ניר — עוד • גלי וולפשטיין — גיטרה, קאנון, סאז • מקסים גינזבורג — כינור ברך • עידו איל — כלי הקשה',
 
   // Testimonials
   testimonialsTitle: 'מה התלמידים אומרים',
   testimonialsSubtitle: 'דירוג 10/10 • 9 חוות דעת',
   testimonials: [
     {
-      name: 'תלמיד מרוצה',
+      name: 'נתן',
       text: 'תומר הוא המורה הכי טוב שיש, מעביר את השיעור בנעימות תוך כדי שימת לב מקצועית ושימת לב אל התלמיד. אני מרגיש שהוא מרגיש אותי, שם לב לכל פרט בהתקדמות שלי. מורה מקצוען נעים סבלני ואיכפתי — בקיצור מורה תותח על חלל!'
     },
     {
-      name: 'תלמידה מרוצה',
+      name: 'Rachel',
       text: 'תומר מורה נהדר! נותן תחושה נעימה ונוטע מוטיבציה להמשיך וללמוד. מחזק על כל התקדמות, נגיש וזמין גם מעבר לשיעורים. אני מרגישה ברת מזל שזה המורה שזכיתי לפגוש כמורה ראשון על עוּד. ממליצה בחום!'
     },
     {
-      name: 'תלמיד מרוצה',
+      name: 'דניאל',
       text: 'תומר הוא מורה נפלא — מבחינת ההבנה העמוקה של העוּד ושל מוזיקה מן המזרח, מבחינת הכישרון שלו כנגן, ובטח מבחינת דרך ההוראה והחוויה אצלו. אני לומד עם תומר כבר שנה ורואה מלא התקדמות בזכותו. ממליץ בחום!'
     },
     {
-      name: 'תלמיד מרוצה',
+      name: 'רואי',
       text: 'תומר מורה מעולה מלא סבלנות, ויודע להתאים את השיעור לרצונות של התלמיד. ממליץ ממש!'
     },
     {
-      name: 'תלמידה מרוצה',
+      name: 'נעם',
       text: 'מורה מעולה ממש, מקצועי ועם מלא סבלנות.'
     },
     {
-      name: 'תלמיד מרוצה',
+      name: 'אלעד',
       text: 'תומר פשוט מקסים, מגיע עם גישה סבלנית מאוד ויסודית מאוד. נגן בחסד עליון ואדם מקסים — אני מרגיש שזכיתי במורה מדהים.'
     },
     {
-      name: 'תלמיד מרוצה',
+      name: 'כפיר',
       text: 'תומר מורה מדהים, הגעתי לתומר בלי רקע קודם בכלל בתחום הנגינה ומשיעור לשיעור הרגשתי איך אני נכנס לעולם ומקבל כלים פרקטיים. ממליץ בחום!'
     },
     {
-      name: 'תלמיד מרוצה',
+      name: 'Itay',
       text: 'תומר מורה מעולה, השיעורים איתו מעניינים ומעשירים והוא יודע ממש להתאים את הלימוד אל התלמיד ואל הצרכים והרצונות שלו. אפשר ממש לראות בשיעורים שהוא חי את המוזיקה ומאוד מחובר אליה, מומלץ מאוד!'
     },
     {
-      name: 'תלמידה מרוצה',
+      name: 'שיר',
       text: 'אני לומדת אצל תומר לנגן על עוּד כבר במשך חודש+. השיעורים מעניינים ומחכימים ונוגעים בכמה תחומים במקביל — גם ברקע הסטורי, בקריאת תווים, למידת טכניקות והסבר על הכלי עצמו. תומר מורה נפלא בעל ידע רחב. ממליצה בחום!'
     }
   ],
@@ -204,49 +214,54 @@ const en: Translations = {
   learnComposeTitle: 'Composition',
   learnComposeDesc: 'Create your own music — from the first idea to a polished piece',
 
-  // Video
+  // Video / MUZAIKA
   videoTitle: 'Performances & Music',
-  videoSubtitle: 'Watch Tomer play — member of the instrumental ensemble MUZAIKA',
+  videoSubtitle: 'I\'m part of MUZAIKA — a Jerusalem ensemble creating original ethnic instrumental music',
   videoFollowCta: 'Follow on Instagram',
+  muzaikaTitle: 'MUZAIKA Ensemble',
+  muzaikaDesc: 'A mosaic of cultures — we are a Jerusalem-based ensemble creating original ethnic instrumental music with Mediterranean roots. Our vision is to create music that connects musical cultures from the Middle East.',
+  muzaikaCta: 'MUZAIKA Website',
+  muzaikaYoutubeCta: 'YouTube Channel',
+  muzaikaMembers: 'Tomer Nir — Oud • Gali Wolfstein — Guitar, Kanun, Saz • Maxim Ginzburg — Knee Violin • Ido Eyal — Percussion',
 
   // Testimonials
   testimonialsTitle: 'What Students Say',
   testimonialsSubtitle: 'Rating 10/10 • 9 Reviews',
   testimonials: [
     {
-      name: 'Happy Student',
+      name: 'Nathan',
       text: 'Tomer is the best teacher — he creates a pleasant atmosphere while paying professional attention to every detail of my progress. A talented, patient, and caring teacher!'
     },
     {
-      name: 'Happy Student',
+      name: 'Rachel',
       text: 'Tomer is a wonderful teacher! He creates a pleasant feeling and instills motivation to continue learning. Available even beyond lessons. I feel lucky to have found him as my first oud teacher. Highly recommended!'
     },
     {
-      name: 'Happy Student',
+      name: 'Daniel',
       text: 'Tomer is a wonderful teacher — in terms of his deep understanding of the oud and Eastern music, his talent as a player, and especially his teaching method. I\'ve been learning with Tomer for a year and see tremendous progress. Highly recommended!'
     },
     {
-      name: 'Happy Student',
+      name: 'Roi',
       text: 'Tomer is an excellent teacher, full of patience, and knows how to tailor each lesson to the student\'s wishes. Truly recommended!'
     },
     {
-      name: 'Happy Student',
+      name: 'Noam',
       text: 'An excellent teacher, professional and extremely patient.'
     },
     {
-      name: 'Happy Student',
+      name: 'Elad',
       text: 'Tomer is simply charming, with a very patient and thorough approach. A divinely gifted player — I feel lucky to have found such an amazing teacher.'
     },
     {
-      name: 'Happy Student',
+      name: 'Kfir',
       text: 'Tomer is an amazing teacher. I came with no prior background in music, and lesson by lesson I felt myself entering a new world and gaining practical skills. Highly recommended!'
     },
     {
-      name: 'Happy Student',
+      name: 'Itay',
       text: 'Tomer is an excellent teacher. His lessons are interesting and enriching, and he knows exactly how to adapt to each student\'s needs. You can really see in his lessons that he lives and breathes the music. Highly recommended!'
     },
     {
-      name: 'Happy Student',
+      name: 'Shir',
       text: 'I\'ve been learning oud with Tomer for over a month. The lessons are interesting and enlightening, touching on history, notation, technique, and the instrument itself. Tomer is a wonderful teacher with vast knowledge. Highly recommended!'
     }
   ],
