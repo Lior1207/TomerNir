@@ -1,10 +1,26 @@
 'use client';
 
-import { Instagram, Play, ExternalLink, Youtube, Music2, Users } from 'lucide-react';
+import { useState, useCallback } from 'react';
+import { Instagram, Play, ExternalLink, Youtube, Music2, Users, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 
+const videos = [
+    { id: 'S4wL_opv7RA', title: 'MUZAIKA Performance' },
+    { id: 'O2JnH2HtIMM', title: 'MUZAIKA Performance 2' },
+];
+
 export default function VideoShowcase() {
-    const { t } = useLanguage();
+    const { t, locale } = useLanguage();
+    const [currentVideo, setCurrentVideo] = useState(0);
+    const isRTL = locale === 'he';
+
+    const goToNext = useCallback(() => {
+        setCurrentVideo((prev) => (prev + 1) % videos.length);
+    }, []);
+
+    const goToPrev = useCallback(() => {
+        setCurrentVideo((prev) => (prev - 1 + videos.length) % videos.length);
+    }, []);
 
     return (
         <section id="video" className="relative py-24 sm:py-32 bg-[#1a1209]">
@@ -27,17 +43,58 @@ export default function VideoShowcase() {
                     </p>
                 </div>
 
-                {/* YouTube Video */}
-                <div className="relative rounded-2xl overflow-hidden border border-amber-400/20 shadow-2xl shadow-amber-900/30 mb-8">
-                    <div className="aspect-video">
-                        <iframe
-                            src="https://www.youtube.com/embed/S4wL_opv7RA?autoplay=1&mute=1&loop=1&playlist=S4wL_opv7RA"
-                            title="MUZAIKA Performance"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className="w-full h-full"
-                        />
+                {/* YouTube Video Carousel */}
+                <div className="relative mb-8 group">
+                    {/* Video */}
+                    <div className="relative rounded-2xl overflow-hidden border border-amber-400/20 shadow-2xl shadow-amber-900/30">
+                        <div className="aspect-video">
+                            <iframe
+                                key={videos[currentVideo].id}
+                                src={`https://www.youtube.com/embed/${videos[currentVideo].id}?autoplay=1&mute=1&loop=1&playlist=${videos[currentVideo].id}`}
+                                title={videos[currentVideo].title}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="w-full h-full"
+                            />
+                        </div>
                     </div>
+
+                    {/* Navigation Arrows */}
+                    {videos.length > 1 && (
+                        <>
+                            <button
+                                onClick={isRTL ? goToNext : goToPrev}
+                                className="absolute -left-5 sm:-left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-amber-500/90 hover:bg-amber-400 border-2 border-amber-300/50 hover:border-amber-300 flex items-center justify-center text-amber-950 transition-all duration-300 shadow-lg shadow-amber-900/40 hover:scale-110 z-10"
+                                aria-label="Previous video"
+                            >
+                                <ChevronLeft className="w-6 h-6" />
+                            </button>
+                            <button
+                                onClick={isRTL ? goToPrev : goToNext}
+                                className="absolute -right-5 sm:-right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-amber-500/90 hover:bg-amber-400 border-2 border-amber-300/50 hover:border-amber-300 flex items-center justify-center text-amber-950 transition-all duration-300 shadow-lg shadow-amber-900/40 hover:scale-110 z-10"
+                                aria-label="Next video"
+                            >
+                                <ChevronRight className="w-6 h-6" />
+                            </button>
+                        </>
+                    )}
+
+                    {/* Dot Indicators */}
+                    {videos.length > 1 && (
+                        <div className="flex items-center justify-center gap-2 mt-4">
+                            {videos.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setCurrentVideo(index)}
+                                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === currentVideo
+                                        ? 'bg-amber-400 w-6'
+                                        : 'bg-amber-400/30 hover:bg-amber-400/50'
+                                        }`}
+                                    aria-label={`Go to video ${index + 1}`}
+                                />
+                            ))}
+                        </div>
+                    )}
                 </div>
 
                 {/* MUZAIKA Card */}

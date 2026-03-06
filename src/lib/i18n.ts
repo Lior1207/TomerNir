@@ -108,14 +108,14 @@ const he: Translations = {
   learnComposeDesc: 'ליצור מוזיקה משלכם — מהרעיון הראשון ועד ליצירה מושלמת',
 
   // Video / MUZAIKA
-  videoTitle: 'הופעות ונגינה',
-  videoSubtitle: 'אני חלק מהרכב מוזאיקה — הרכב ירושלמי היוצר מוסיקה אתנית אינסטרומנטלית מקורית',
+  videoTitle: 'המוזיקה שלי',
+  videoSubtitle: 'יצירות שהלחנתי',
   videoFollowCta: 'עקבו באינסטגרם',
   muzaikaTitle: 'הרכב מוזאיקה',
-  muzaikaDesc: 'פסיפס של תרבויות — אנחנו הרכב ירושלמי שיוצר מוסיקה אתנית אינסטרומנטלית מקורית בהשפעות שורשיות של מוסיקה ים תיכונית. החזון שלנו הוא ליצור מוזיקה שמחברת בין תרבויות מוסיקליות מהמזרח התיכון.',
+  muzaikaDesc: 'אני חלק מההרכב מוזאיקה ומלחין חלק משמעותי מהמוזיקה שאנחנו מנגנים. מוזאיקה הוא הרכב ירושלמי שיוצר מוסיקה אתנית אינסטרומנטלית מקורית בהשפעות שורשיות של מוסיקה ים תיכונית.',
   muzaikaCta: 'לאתר מוזאיקה',
   muzaikaYoutubeCta: 'לערוץ היוטיוב',
-  muzaikaMembers: 'תומר ניר — עוד • גלי וולפשטיין — גיטרה, קאנון, סאז • מקסים גינזבורג — כינור ברך • עידו איל — כלי הקשה',
+  muzaikaMembers: 'תומר ניר — עוד • גלי וולפשטיין — גיטרה, קאנון, סאז • מקסים גינזבורג — כינור ברך • עידו איל — כלי הקשה • יערי בן ברק — קונטרבס',
 
   // Testimonials
   testimonialsTitle: 'מה התלמידים אומרים',
@@ -215,14 +215,14 @@ const en: Translations = {
   learnComposeDesc: 'Create your own music — from the first idea to a polished piece',
 
   // Video / MUZAIKA
-  videoTitle: 'Performances & Music',
-  videoSubtitle: 'I\'m part of MUZAIKA — a Jerusalem ensemble creating original ethnic instrumental music',
+  videoTitle: 'My Music',
+  videoSubtitle: 'Compositions I Wrote',
   videoFollowCta: 'Follow on Instagram',
   muzaikaTitle: 'MUZAIKA Ensemble',
-  muzaikaDesc: 'A mosaic of cultures — we are a Jerusalem-based ensemble creating original ethnic instrumental music with Mediterranean roots. Our vision is to create music that connects musical cultures from the Middle East.',
+  muzaikaDesc: 'I am part of MUZAIKA and compose a significant portion of the music we perform. MUZAIKA is a Jerusalem-based ensemble creating original ethnic instrumental music with Mediterranean roots.',
   muzaikaCta: 'MUZAIKA Website',
   muzaikaYoutubeCta: 'YouTube Channel',
-  muzaikaMembers: 'Tomer Nir — Oud • Gali Wolfstein — Guitar, Kanun, Saz • Maxim Ginzburg — Knee Violin • Ido Eyal — Percussion',
+  muzaikaMembers: 'Tomer Nir — Oud • Gali Wolfstein — Guitar, Kanun, Saz • Maxim Ginzburg — Knee Violin • Ido Eyal — Percussion • Yaari Ben Barak — Contrabass',
 
   // Testimonials
   testimonialsTitle: 'What Students Say',
