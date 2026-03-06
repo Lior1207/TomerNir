@@ -59,6 +59,8 @@ export interface Translations {
   pricingAtTeacherLocation: string;
   pricingAtStudent: string;
   pricingAtStudentLocation: string;
+  pricingOnline: string;
+  pricingOnlineLocation: string;
   pricingPerHour: string;
   pricingCta: string;
   pricingLocationsTitle: string;
@@ -165,7 +167,9 @@ const he: Translations = {
   pricingAtTeacher: 'בבית המורה',
   pricingAtTeacherLocation: 'עין כרם, ירושלים',
   pricingAtStudent: 'בבית התלמיד/ה',
-  pricingAtStudentLocation: 'ירושלים והסביבה / תל אביב',
+  pricingAtStudentLocation: 'ירושלים והסביבה',
+  pricingOnline: 'אונליין / זום',
+  pricingOnlineLocation: 'מכל מקום בעולם',
   pricingPerHour: '₪ לשעה',
   pricingCta: 'לקביעת שיעור',
   pricingLocationsTitle: 'אזורי הוראה',
@@ -272,7 +276,9 @@ const en: Translations = {
   pricingAtTeacher: 'At Teacher\'s Home',
   pricingAtTeacherLocation: 'Ein Kerem, Jerusalem',
   pricingAtStudent: 'At Student\'s Home',
-  pricingAtStudentLocation: 'Jerusalem area / Tel Aviv',
+  pricingAtStudentLocation: 'Jerusalem area',
+  pricingOnline: 'Online / Zoom',
+  pricingOnlineLocation: 'From anywhere in the world',
   pricingPerHour: '₪ / hour',
   pricingCta: 'Book a Lesson',
   pricingLocationsTitle: 'Teaching Areas',
